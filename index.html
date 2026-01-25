@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cornell Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <div class="nav">
+    <button id="prev" aria-label="Previous">
+      <i data-lucide="chevron-left"></i>
+    </button>
+
+    <span id="page-indicator"></span>
+
+    <button id="next" aria-label="Next">
+      <i data-lucide="chevron-right"></i>
+    </button>
+  </div>
+
+  <!-- PLANNER PAGE -->
+  <div class="planner">
+
+    <!-- HEADER -->
+    <div class="header">
+
+  <div class="field inline">
+    <span class="label">Subject :</span>
+    <textarea id="subject"></textarea>
+  </div>
+
+  <div class="field inline topic">
+    <span class="label">Topic :</span>
+    <textarea id="topic"></textarea>
+  </div>
+
+</div>
+
+
+    <!-- BODY -->
+    <div class="content">
+      <textarea id="keypoints" placeholder="Key Points"></textarea>
+      <textarea id="notes" placeholder="Notes"></textarea>
+    </div>
+    <!-- SUMMARY -->
+    <textarea id="summary" placeholder=" Summary"></textarea>   
+
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
