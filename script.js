@@ -1,4 +1,4 @@
-const STORAGE_KEY = "planner-notes";
+const STORAGE_KEY = "fullmoon.pocketplanner.cornellnotes";
 
 let notes = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
 let currentIndex = 0;
